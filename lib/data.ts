@@ -20,6 +20,17 @@ export interface Project {
     featured?: boolean;
 }
 
+export interface Experience {
+    company: string;
+    title: string;
+    period: string;
+    url: string;
+    description: string[];
+    technologies: string[];
+}
+
+export const experiences: Experience[] = [];
+
 export const education: Education[] = [
     {
         institution: "SCI19_3611",
