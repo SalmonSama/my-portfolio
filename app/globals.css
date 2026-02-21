@@ -1,0 +1,181 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+/* --- Theme Variables --- */
+
+:root {
+
+  /* Define main theme colors here */
+
+  --background: #0f172a;
+
+  /* Deep Ocean Blue base */
+
+  /* Slate 900 (Deep Navy) */
+
+  --foreground: #94a3b8;
+
+  /* Slate 400 (Muted Text) */
+
+}
+
+
+
+/* --- Global Reset --- */
+
+* {
+
+  box-sizing: border-box;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+/* --- HTML Settings --- */
+
+html {
+
+  /* Enables smooth scrolling when clicking anchor links */
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+/* --- Body Styles --- */
+
+body {
+
+  background-color: var(--background);
+
+  color: var(--foreground);
+
+  font-family: 'Inter', system-ui, sans-serif;
+
+
+
+  /* Font smoothing for better readability on MacOS/iOS */
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+  /* CRITICAL FIX FOR STICKY LAYOUT:
+
+     1. Set min-height to ensure full page coverage.
+
+     2. REMOVED 'overflow-x: hidden' to allow position: sticky to work correctly. */
+
+  min-height: 100vh;
+
+  line-height: 1.6;
+
+}
+
+
+
+/* --- Custom Scrollbar (Hacker/Dark Theme) --- */
+
+/* Targeting Webkit browsers (Chrome, Safari, Edge) */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+  /* Width of the scrollbar */
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+  background: #0f172a;
+
+  /* Track color matches background */
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+  background-color: #334155;
+
+  /* Dark grey thumb */
+
+  border-radius: 5px;
+
+  /* Rounded corners */
+
+  border: 2px solid #0f172a;
+
+  /* Border to create padding effect */
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+
+  background-color: #2dd4bf;
+
+  /* Teal-400 on hover (Deep Ocean Bloom Style) */
+
+}
+
+
+
+/* --- Text Selection --- */
+
+/* Custom color when highlighting text */
+
+::selection {
+
+  background-color: rgba(45, 212, 191, 0.3);
+
+  /* teal-400 at 30% opacity */
+
+  color: #e2e8f0;
+
+  /* slate-200 — readable on dim selection */
+
+}
+
+
+
+/* --- Utility Classes --- */
+
+/* Helper to hide scrollbar but keep scrolling functionality */
+
+.no-scrollbar::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+
+
+.no-scrollbar {
+
+  -ms-overflow-style: none;
+
+  /* IE and Edge */
+
+  scrollbar-width: none;
+
+  /* Firefox */
+
+}
