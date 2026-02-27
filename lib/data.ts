@@ -92,14 +92,14 @@ export const education: Education[] = [
 
 export const projects: Project[] = [
     {
-        title: "Machine Learning: Hard Disk Drive",
+        title: "Microscope Auto-focus System using Image Processing",
         year: 2025,
         madeAt: "University",
         image: "/projects/hdd-ml/hhd.png",
-        description: "A machine learning project focused on predictive analysis or classification for Hard Disk Drives. Developed robust models to analyze specific data patterns.",
+        description: "Developed an automated focusing system for microscopes by utilizing FFT and digital filtering techniques to analyze the sharpness of HDD surface images.",
         url: "https://github.com/ZearoByMc/Project1_SUT",
         github: "https://github.com/ZearoByMc/Project1_SUT",
-        technologies: ["Python", "Machine Learning", "Data Analysis", "Scikit-Learn"],
+        technologies: ["Image Processing", "FFT", "Digital Filters", "Python"],
         featured: true,
     },
     {
